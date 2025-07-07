@@ -48,6 +48,7 @@ class ExpenseViewModel(application: Application) : AndroidViewModel(application)
     val allExpenseCategories: LiveData<List<ExpenseCategory>>
     val allIncomeCategories: LiveData<List<IncomeCategory>>
 
+
     init {
         // 데이터베이스 인스턴스와 DAO들을 가져옵니다
         val database = ExpenseDatabase.getDatabase(application)
